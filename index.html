@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background: black;color: white;font-family: sans-serif;">
+<body>
     <!-- Header nav -->
     <header class="nav-container">
         <div class="logo-icon"></div>
@@ -16,7 +16,8 @@
             <a>Home</a>
             <a>About Us</a>
             <a href="#our-menu">Our Menu</a>
-            <a>Subscribe</a>
+            <a>Events</a>
+            <a>Contact Us</a>
         </nav>
     </header>
 
@@ -29,7 +30,7 @@
             <h3 style="margin-top: 37px;">Welcome, User!</h3>
             <h1>Elevate your coffee experience with our unique blends and warm atmosphere</h1>
             <p style="margin-right: 425px;line-height: 25px;">
-                Take a moment to escape the hustle and bustle of daily life. Our cafe offers a warm, welcoming atmosphere where you can relax, work, or catch up with friends. With cozy seating, free Wi-Fi, and a selection of delicious pastries and snacks, Black Brew is the perfect spot to recharge and enjoy the simple pleasures.
+                Take a moment to escape the hustle and bustle of daily life. Our cafe offers a warm, welcoming atmosphere where you can relax, work, or catch up with friends. With cozy seating, free Wi-Fi, and delicious foods, Black Brew is the perfect spot to recharge and enjoy the simple pleasures.
             </p>
             </div> 
         </div>
@@ -49,44 +50,141 @@
                     Founded in Malang City, our passion for exceptional coffee led us to create a haven in the heart of Malang City, where coffee enthusiasts and community members alike gather to experience the artistry of a perfect brew.
                 </p>
                 <p style="line-height: 25px;text-align: justify;">
-                    Whether you're a coffee connoisseur or new to the world of specialty brews, we invite you to join us at Black Brew. Discover why we're more than just a coffee shop—we're a destination where every cup celebrates craftsmanship, community, and the joy of shared moments.
+                    We invite you to join us at Black Brew. Discover why we're more than just a coffee shop—we're a destination where every cup celebrates craftsmanship, community, and the joy of shared moments.
                 </p>
                 </div>
 
             <div class="about-picture"></div>
         </section>
 
+            
         <!-- our menu content -->
         <section id="our-menu">
             
-            <h1 style="text-align: center;">
+            <h1 class="menu-format">
                 Our Menu
             </h1>
-            
 
             <article class="menu-content">
 
                 <div class="menu-item">
-                    <div class="menu-icon deals"></div>
-                <p>Deals</p>
+                    <div class="menu-icon coffee"></div>
+                <p>Coffee</p>
                 </div>
 
                 <div class="menu-item">
-                    <div class="menu-icon beverages"></div>
-                <p>Beverages</p>
+                    <div class="menu-icon ncoffee"></div>
+                <p>Non Coffee</p>
                 </div>
 
                 <div class="menu-item">
                     <div class="menu-icon food"></div>
-                <p>Food</p>
+                <p>Snack and Food</p>
                 </div>
 
             </article>
-            
+
         </section>
-        <!-- subscribe content -->
+
+        <!-- Events 1 -->
+        <section class="event-format">
+
+            <div class="event-picture"></div>
+            
+            <div class="event-text">
+                <h2 class="event-notice">
+                    UPCOMING EVENT
+                </h2>
+                <h2>
+                    Jazzy Valentine
+                </h2>
+                <p class="textv-format">
+                    Celebrate Valentine's Day with an enchanting evening of live jazz performance that promises to sweep you off your feet at Black Brew! Whether you're sharing this special night with a loved one or enjoying the music solo, the intimate setting and captivating tunes will make it a memorable experience. 
+                </p>
+                <p class="textv-format">
+                    Saturday, 15 Feb 2024
+                </p>
+                <p class="textv-format">
+                    7.00 PM - Close
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Events 2 -->
+        <section class="event2-format">
+
+            <div class="event2-picture"></div>
+            
+            <div class="event-text">
+                <h2 class="event-notice">
+                    UPCOMING EVENT
+                </h2>
+                <h2>
+                    Women-Only Free Coffee class!
+                </h2>
+                <p class="textv-format">
+                    This International Women's Day, celebrate the achievements of women in the world with a free, women-only coffee making class. Whether you're a coffee enthusiast or a beginner, this special event is designed to enhance your coffee brewing skills and connect you with a community of like-minded women.
+                </p>
+                <p class="textv-format">
+                    Friday, 8 March 2024
+                </p>
+                <p class="textv-format">
+                    11.00 AM - 1.00 PM
+                </p>
+            </div>
+
+        </section> 
+
+        <!-- contact us content -->
+        <section class="contact">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
     
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@blackbrew.com</p>
+                <p>Phone: +62 812 5550 8880</p>
+            </div>
+            <div class="footer-section location">
+                <h3>Location</h3>
+                <p>Ijen Besar St. 12</p>
+                <p>Kota Malang, Indonesia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Black Brew. All rights reserved.
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
