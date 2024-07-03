@@ -31,6 +31,29 @@ nav>a{
     padding-right: 32px;
 }
 
+@media only screen and (max-width: 500px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-responsif {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-icon {
+        margin-bottom: 15px;
+    }
+
+    a {
+        margin: 5px 0px 5px 0px;
+    }
+}
+
+    
+
 .home-format{
     display: flex;
     margin-bottom: 200px;
@@ -60,6 +83,29 @@ nav>a{
     color: #b5d4c6;
 }
 
+.banner-des {
+    margin-right: 425px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+    .banner-text h1 {
+        font-size: 17pt;
+        width: 380px;
+        text-wrap: balance;
+    }
+
+    .banner-des {
+        font-size: 10pt;
+        width: 380px;
+        text-wrap: balance;
+    }
+
+    .home-format{
+        margin-bottom: 80px;
+    }
+}
+
 .about-format {
     display: flex;
     justify-content: end;
@@ -77,6 +123,22 @@ nav>a{
 .about-text {
     max-width: 40%;
     margin-right: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    .about-format {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .about-picture {
+        width: auto;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
 
 
@@ -112,6 +174,18 @@ nav>a{
 .menu-item {
     text-align: center;
     font-size: 18pt;
+}
+
+@media only screen and (max-width: 400px) {
+    .menu-format{
+        text-align: center;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .event-format {
@@ -159,9 +233,34 @@ nav>a{
     background-position: center;
 }
 
+@media only screen and (max-width: 400px) {
+    .event-format {
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    .event-picture {
+        width: auto;
+    }
+
+    .event-text {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .event2-format {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .event2-picture {
+        width: 100%;
+    }
+}
+
 .contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -217,6 +316,28 @@ nav>a{
     padding: 20px;
 }
 
+.output-container {
+    background-color: #0000007d;
+    padding: 0 15px 0 15px;
+}
+
+.otitle-format {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+    .contact {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .contact-form-container {
+        max-width: 65%;
+    }
+}
+
 .footer {
     padding: 40px 0;
 }
@@ -251,4 +372,15 @@ nav>a{
     text-align: left;
     margin: 35px 40px 20px;
     font-size: 12px;
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        padding-top: 37px;
+        flex: 1 1 0px;
+    }
 }
