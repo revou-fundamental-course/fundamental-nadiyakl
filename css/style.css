@@ -7,6 +7,9 @@ body {
     background: black;color: white;font-family: sans-serif;
 }
 
+
+/* logo dan menu */
+
 header {
     margin-top: 16px;
     margin-left: 15px;
@@ -31,7 +34,9 @@ nav>a{
     padding-right: 32px;
 }
 
-@media only screen and (max-width: 500px) {
+/* responsive design logo - menu */
+
+@media only screen and (max-width: 400px) {
     .nav-container {
         flex-direction: column;
     }
@@ -53,6 +58,7 @@ nav>a{
 }
 
     
+/* banner */
 
 .home-format{
     display: flex;
@@ -125,6 +131,8 @@ nav>a{
     margin-right: 50px;
 }
 
+/* responsive design banner */
+
 @media only screen and (max-width: 400px) {
     .about-format {
         flex-direction: column;
@@ -141,6 +149,7 @@ nav>a{
     }
 }
 
+/* menu section */
 
 .menu-format{
     text-align: center;
@@ -176,6 +185,8 @@ nav>a{
     font-size: 18pt;
 }
 
+/* responsive design menu */
+
 @media only screen and (max-width: 400px) {
     .menu-format{
         text-align: center;
@@ -187,6 +198,8 @@ nav>a{
     }
 
 }
+
+/* event section */
 
 .event-format {
     margin-top: 160px;
@@ -233,6 +246,8 @@ nav>a{
     background-position: center;
 }
 
+/* responsive design event */
+
 @media only screen and (max-width: 400px) {
     .event-format {
         margin-top: 80px;
@@ -257,6 +272,8 @@ nav>a{
         width: 100%;
     }
 }
+
+/* form */
 
 .contact {
     display: flex;
@@ -326,6 +343,8 @@ nav>a{
     font-weight: bold;
 }
 
+/* form responsive */
+
 @media only screen and (max-width: 400px) {
     .contact {
         flex-direction: column;
@@ -337,6 +356,8 @@ nav>a{
         max-width: 65%;
     }
 }
+
+/* footer */
 
 .footer {
     padding: 40px 0;
@@ -373,6 +394,8 @@ nav>a{
     margin: 35px 40px 20px;
     font-size: 12px;
 }
+
+/* footer responsive */
 
 @media only screen and (max-width: 400px) {
     .footer-content {
